@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  background-color: rgb(247, 228, 204);
+}
+
+#grid {
+  display: grid;
+  border: 3px solid black;
+  margin: 50px auto;
+  background-color: white;
+  width: 560px;
+  height: 560px;
+  grid-template-columns: repeat(16, 35px);
+  grid-auto-rows: 35px;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-div:hover {
+  background-color: aquamarine;
+}
+
