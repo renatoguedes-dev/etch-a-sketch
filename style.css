@@ -24,6 +24,7 @@ h1#website-title {
   background-color: rgb(253, 77, 77);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+  min-width: 620px;
 }
 
 footer {
@@ -35,6 +36,8 @@ div.content {
   background-color: rgb(253, 77, 77);
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  min-width: 620px;
+  max-width: 620px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
