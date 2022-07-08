@@ -14,6 +14,11 @@ body {
 
 h1#website-title {
   grid-area: h;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  margin: 10px auto ;
 }
 
 footer {
@@ -50,6 +55,8 @@ div#grid {
   justify-content: center;
   padding: 40px;
   margin-top: 100px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #grid {
@@ -57,10 +64,8 @@ div#grid {
   border: 3px solid black;
   margin: 50px auto;
   background-color: white;
-  width: 560px;
-  height: 560px;
-  grid-template-columns: repeat(16, 35px);
-  grid-auto-rows: 35px;
+  width: 500px;
+  height: 500px;
   justify-content: center;
   /* align-items: center; */
 }
@@ -78,5 +83,14 @@ div#grid {
 .menu-btn {
   padding: 15px;
   margin: 10px auto;
-  width: 120px;
+  width: 160px;
+  font-size: 18px;
+}
+
+#grid-size {
+  margin-bottom: 30px;
+}
+
+#size-value {
+  font-size: 35px;
 }
