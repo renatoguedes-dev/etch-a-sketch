@@ -66,10 +66,10 @@ function colorRandom() {
 }
 
 // eraser button
-const eraserButton = document.getElementsByClassName('eraser-mode')[0];
-eraserButton.addEventListener('click', erasePixel);
+const whiteButton = document.getElementsByClassName('white-mode')[0];
+whiteButton.addEventListener('click', whiteColor);
 
-function erasePixel() {
+function whiteColor() {
   const squareDiv = Array.from(document.getElementsByClassName('square-div'));
   squareDiv.forEach(div => div.addEventListener('mouseover', () => 
   div.style.backgroundColor = 'white'));
