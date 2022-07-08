@@ -7,8 +7,9 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 100px auto 100px;
   grid-template-areas: 
-    "h h h h h h h h h h"
-    "c c c c c c c c c c"
+    ". . h h h h h h . ."
+    ". . c c c c c c . ."
+    ". . c c c c c c . ."
     "f f f f f f f f f f";
 }
 
@@ -18,7 +19,11 @@ h1#website-title {
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  margin: 10px auto ;
+  margin-top: 30px;
+  padding: 40px;
+  background-color: rgb(253, 77, 77);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 footer {
@@ -27,19 +32,23 @@ footer {
 
 div.content {
   grid-area: c;
+  background-color: rgb(253, 77, 77);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-template-areas: 
-    "m g .";
+    ". g ."
+    ". m .";
 }
 
 div.menu {
   grid-area: m;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 div#grid {
@@ -54,7 +63,7 @@ div#grid {
   align-items: center;
   justify-content: center;
   padding: 40px;
-  margin-top: 100px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -62,7 +71,7 @@ div#grid {
 #grid {
   display: grid;
   border: 3px solid black;
-  margin: 50px auto;
+  margin: 10px auto 20px auto;
   background-color: white;
   width: 500px;
   height: 500px;
@@ -82,8 +91,8 @@ div#grid {
 
 .menu-btn {
   padding: 15px;
-  margin: 10px auto;
-  width: 160px;
+  margin: 0 10px 20px 10px;
+  width: 100px;
   font-size: 18px;
 }
 
