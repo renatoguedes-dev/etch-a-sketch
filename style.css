@@ -1,16 +1,20 @@
+html {
+  height: 100%;
+  width: 100;
+}
 body {
   margin: 0;
   text-align: center;
   background-color: rgb(247, 228, 204);
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: auto 570px auto;
   grid-template-rows: 100px auto 100px;
-  grid-template-areas: 
-    ". . h h h h h h . ."
-    ". . c c c c c c . ."
-    ". . c c c c c c . ."
-    "f f f f f f f f f f";
+  grid-template-areas:
+      ". h ."
+      ". c ."
+      ". c ."
+      "f f f";
 }
 
 h1#website-title {
@@ -23,7 +27,6 @@ h1#website-title {
   background-color: rgb(253, 77, 77);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  min-width: 620px;
 
 }
 
@@ -37,7 +40,6 @@ div.content {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-top: 5px;
-  min-width: 620px;
   
   display: grid;
   justify-content: center;
@@ -51,10 +53,6 @@ div.content {
 
 div.menu {
   grid-area: m;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 div#grid {
@@ -82,17 +80,12 @@ div#grid {
   width: 500px;
   height: 500px;
   justify-content: center;
-  /* align-items: center; */
 }
 
 #grid div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.square-div:hover {
-  background-color: aquamarine;
 }
 
 .menu-btn {
